@@ -15,7 +15,7 @@ const ProfileHeading = ({ className }: { className?: string }) => {
       />
       <div className="flex flex-col justify-center pt-7 gap-4">
         <h1 className="text-5xl">
-          I'm <br /> Pranav Sonawane
+          I&apos;m <br /> Pranav Sonawane
         </h1>
         <p className="text-2xl font-semibold text-black">
           Software Developer based in <br />

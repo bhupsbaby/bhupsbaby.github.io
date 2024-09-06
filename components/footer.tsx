@@ -17,7 +17,9 @@ const Footer = () => {
               className="rounded-full"
             />
             <div className="flex flex-col justify-center gap-4">
-              <h2 className="text-3xl font-semibold">I'm Pranav Sonawane</h2>
+              <h2 className="text-3xl font-semibold">
+                I&apos;m Pranav Sonawane
+              </h2>
               <p className="text-gray-400">
                 Software Developer based in Maharashtra, India
               </p>
