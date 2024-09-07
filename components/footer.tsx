@@ -6,7 +6,7 @@ const Footer = () => {
     <section className="bg-offwhite md:p-12">
       <div className="flex flex-col md:flex-row justify-between md:p-12 rounded-3xl rounded-bl-none rounded-br-none md:rounded-full bg-black text-white">
         <div className="flex flex-col p-7 md:flex-row items-center">
-          <div className="flex md:flex-row items-center gap-12">
+          <div className="flex md:flex-row items-center gap-7 md:gap-12">
             <Image
               src={
                 "https://i.pinimg.com/474x/69/56/f7/6956f7a4f805108af3f87c8bc5a600c1.jpg"
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center items-center relative my-12 md:mb-0 px-20">
-          <button className="absolute flex text-center justify-center rounded-full w-[90%] bg-white py-4 px-6 text-md text-black font-semibold">
+          <button className="absolute flex text-center justify-center rounded-full w-[90%] bg-white py-4 px-6 text-sm md:text-md text-black font-semibold">
             Talk with me
           </button>
         </div>
