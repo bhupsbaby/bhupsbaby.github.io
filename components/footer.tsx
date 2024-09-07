@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center relative my-12 md:mb-0 px-20">
+        <div className="flex justify-center items-center relative md:mb-0 px-20">
           <button className="absolute flex text-center justify-center rounded-full w-[90%] bg-white py-4 px-6 text-sm md:text-md text-black font-semibold">
             Talk with me
           </button>
