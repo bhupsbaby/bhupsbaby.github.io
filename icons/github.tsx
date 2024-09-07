@@ -1,6 +1,6 @@
 import React from "react";
 
-const GithubIcon = ({ className }: { className: string }) => {
+const GithubIcon = ({ className }: { className?: string }) => {
   return (
     <div>
       <svg

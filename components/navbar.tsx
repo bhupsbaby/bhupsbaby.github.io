@@ -1,4 +1,5 @@
 "use client";
+import { ResumeUrl } from "@/data/data";
 import Link from "next/link";
 
 export default function Navbar({ className }: { className?: string }) {
@@ -29,9 +30,11 @@ export default function Navbar({ className }: { className?: string }) {
           </div>
         </div>
 
-        <button className="rounded-full bg-offwhite px-6 py-2 text-md font-semibold text-gray-600 border border-1 border-lightbrown">
-          See my work
-        </button>
+        <Link href={ResumeUrl} target="_blank" prefetch={false}>
+          <button className="rounded-full bg-offwhite px-6 py-2 text-sm md:text-md font-semibold text-gray-600 border border-1 border-lightbrown">
+            Resume
+          </button>
+        </Link>
       </nav>
     </header>
   );

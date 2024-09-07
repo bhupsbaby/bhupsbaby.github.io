@@ -102,3 +102,6 @@ export const MyProjects = [
     githubUrl: "lmawfe",
   },
 ];
+
+export const ResumeUrl =
+  "https://drive.google.com/file/d/1-83Cu87iJTRW1L_DNLvxORpmSZU56oUK/view";

@@ -1,6 +1,6 @@
 import React from "react";
 
-const TwitterIcon = ({ className }: { className: string }) => {
+const TwitterIcon = ({ className }: { className?: string }) => {
   return (
     <div>
       <svg

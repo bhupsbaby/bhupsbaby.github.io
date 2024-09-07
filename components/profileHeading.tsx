@@ -1,5 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import LiveNow from "./liveNow";
+import DiscordIcon from "@/icons/discord";
+import TwitterIcon from "@/icons/twitter";
+import GithubIcon from "@/icons/github";
 
 const ProfileHeading = ({ className }: { className?: string }) => {
   return (
@@ -21,6 +25,20 @@ const ProfileHeading = ({ className }: { className?: string }) => {
           Software Developer based in <br />
           Maharashtra, India.
         </p>
+        <div className="flex">
+          <LiveNow />
+        </div>
+        {/* <div className="flex gap-2 py-2">
+          <span className="">
+            <DiscordIcon />
+          </span>
+          <span className="">
+            <TwitterIcon />
+          </span>
+          <span className="">
+            <GithubIcon />
+          </span>
+        </div> */}
       </div>
     </div>
   );
