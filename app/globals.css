@@ -24,6 +24,12 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: "Playfair-display-extrabold-italic-bold";
+  src: url("../public/fonts/playfair-display/PlayfairDisplay-Bold.ttf")
+    format("truetype");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -101,4 +107,8 @@ h2 {
 
 #navHeading {
   font-family: "Playfair-display-italic-bold", "sans-serif";
+}
+
+#main-heading {
+  font-family: "Playfair-display-extrabold-italic-bold", "sans-serif";
 }

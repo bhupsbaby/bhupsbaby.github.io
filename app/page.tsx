@@ -13,12 +13,12 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center py-20 min-h-screen bg-offwhite">
-      <div className="flex w-full max-w-5xl gap-12">
-        <div className="w-[50%]">
+    <main className="flex flex-col items-center py-12 md:py-20 min-h-screen bg-offwhite">
+      <div className="flex flex-col md:flex-row w-full px-7 md:max-w-5xl gap-12">
+        <div className="w-full md:w-[50%]">
           <ProfileHeading />
         </div>
-        <div className="flex flex-col items-center w-[50%]">
+        <div className="flex flex-col items-center w-full md:w-[50%]">
           <About />
           {/* Working Experience */}
           <Section>
