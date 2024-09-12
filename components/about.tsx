@@ -14,7 +14,7 @@ const About = ({ className }: { className?: string }) => {
       </p>
       <div className="flex gap-6">
         <button className="rounded-full bg-black px-6 py-2 text-sm font-medium text-white">
-          Talk with me
+          Let&apos;s talk
         </button>
         <button className="rounded-full bg-offwhite px-6 py-2 text-sm font-medium text-black border border-lightbrown">
           See my work

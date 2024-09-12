@@ -38,7 +38,7 @@ const SmallCard = (props: Props) => {
           <p className="text-base md:text-lg font-bold">{props.data.company}</p>
         </div>
       </div>
-      <p className="flex justify-center text-center text-xs md:text-sm text-gray-400 font-semibold">
+      <p className="hidden md:block md:flex justify-center text-center text-xs text-gray-400 font-semibold">
         {props.data.year}
       </p>
     </div>

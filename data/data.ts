@@ -1,7 +1,7 @@
 export const ExpericeData = [
   {
     id: 1,
-    title: "Full Stack Developer",
+    title: "Full Stack Developer Intern",
     company: "Greendreamearth.org",
     year: "Apr 2024 - Jun 2024",
     place: "Remote",
@@ -9,15 +9,15 @@ export const ExpericeData = [
     image: "",
     url: "https://www.helpstudyabroad.com",
   },
-  // {
-  //   id: 2,
-  //   title: "Front-end Developer",
-  //   company: "Company Name",
-  //   place: "Nashik, India",
-  //   year: "Feb 2020 - Present",
-  //   image: "",
-  //   url: "lmawfe",
-  // },
+  {
+    id: 2,
+    title: "Front-end Developer",
+    company: "The Time Stack",
+    place: "Remote",
+    year: "Feb 2023 - Mar 2024",
+    image: "",
+    url: "https://thetimestack.com/",
+  },
   // {
   //   id: 3,
   //   title: "Back-end Developer",
