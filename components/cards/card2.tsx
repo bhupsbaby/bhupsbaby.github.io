@@ -18,8 +18,8 @@ const MediumCard = (props: Props) => {
       <div className="flex justify-center items-center relative h-10 w-20 rounded-full bg-offwhite text-bold text-center">
         <div className="absolute">{"W." || props.data.icon}</div>
       </div>
-      <div className="flex flex-col gap-1 md:gap-2">
-        <h2 className="text-lg md:text-xl font-semibold">{props.data.title}</h2>
+      <div className="flex flex-col gap-1">
+        <h3 className="text-base md:text-lg font-bold">{props.data.title}</h3>
         <p className="text-xs md:text-sm text-gray-400">{props.data.desc}</p>
       </div>
     </div>

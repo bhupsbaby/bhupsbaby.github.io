@@ -8,7 +8,7 @@ const Section = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={`flex flex-col gap-3 mb-20 w-full ${className}`}>
+    <div className={`flex flex-col gap-3 mb-12 md:mb-20 w-full ${className}`}>
       <span className="border-t border-lightbrown w-full pb-2" />
       {children}
     </div>

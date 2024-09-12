@@ -1,32 +1,32 @@
 export const ExpericeData = [
   {
     id: 1,
-    title: "Software Developer",
-    company: "Company Name",
-    year: "Feb 2020 - Present",
-    place: "Pune, India",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, ligula at ultrices elementum, ipsum libero elementum ex, et ultrices turpis ante nec nis",
+    title: "Full Stack Developer",
+    company: "Greendreamearth.org",
+    year: "Apr 2024 - Jun 2024",
+    place: "Remote",
+    desc: "Designed and developed web app using Next.js, MongoDB, Nest.js and with RBAC. Focused on improving user interface and experience along with security.",
     image: "",
-    url: "lmawfe",
+    url: "https://www.helpstudyabroad.com",
   },
-  {
-    id: 2,
-    title: "Front-end Developer",
-    company: "Company Name",
-    place: "Nashik, India",
-    year: "Feb 2020 - Present",
-    image: "",
-    url: "lmawfe",
-  },
-  {
-    id: 3,
-    title: "Back-end Developer",
-    company: "Company Name",
-    year: "Feb 2020 - Present",
-    place: "Pune, India",
-    image: "",
-    url: "lmawfe",
-  },
+  // {
+  //   id: 2,
+  //   title: "Front-end Developer",
+  //   company: "Company Name",
+  //   place: "Nashik, India",
+  //   year: "Feb 2020 - Present",
+  //   image: "",
+  //   url: "lmawfe",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Back-end Developer",
+  //   company: "Company Name",
+  //   year: "Feb 2020 - Present",
+  //   place: "Pune, India",
+  //   image: "",
+  //   url: "lmawfe",
+  // },
 ];
 
 export const RecognitionData = [
@@ -105,3 +105,7 @@ export const MyProjects = [
 
 export const ResumeUrl =
   "https://drive.google.com/file/d/1-83Cu87iJTRW1L_DNLvxORpmSZU56oUK/view";
+
+export const GithubProfileUrl = "https://github.com/snowrlax";
+export const XProfileUrl = "https://twitter.com/pranaviskidding";
+export const DiscordUrl = "https://discord.com/snowrlax#6923";

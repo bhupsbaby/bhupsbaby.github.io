@@ -14,7 +14,7 @@ import {
 export default function Home() {
   return (
     <main className="flex flex-col items-center py-7 md:py-20 min-h-screen bg-offwhite">
-      <div className="flex flex-col md:flex-row w-full px-7 md:max-w-5xl gap-12">
+      <div className="flex flex-col md:flex-row w-full px-7 md:max-w-5xl gap-7 md:gap-12">
         <div className="w-full md:w-[50%]">
           <ProfileHeading />
         </div>

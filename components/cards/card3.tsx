@@ -25,9 +25,9 @@ const CardWithImage = (props: Props) => {
         height={100}
         className="rounded-xl w-full bg-lightbrown object-cover"
       />
-      <div className="flex flex-col gap-2">
-        <h2 className="text-xl font-semibold">{props.data.title}</h2>
-        <p className="text-sm line-clamp-2 text-gray-400">{props.data.desc}</p>
+      <div className="flex flex-col gap-1">
+        <h3 className="text-lg font-semibold">{props.data.title}</h3>
+        <p className="text-xs line-clamp-2 text-gray-400">{props.data.desc}</p>
       </div>
     </div>
   );

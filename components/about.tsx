@@ -5,7 +5,10 @@ const About = ({ className }: { className?: string }) => {
     <div
       className={`flex flex-col mb-12 md:mb-20 justify-between ${className}`}
     >
-      <p id="about" className="text-2xl md:text-4xl leading-snug pb-12">
+      <p
+        id="about"
+        className="text-2xl md:text-3xl font-semibold text-black pb-12"
+      >
         Passionate creating great experiences for Web <br />
         Products
       </p>

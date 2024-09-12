@@ -25,20 +25,20 @@ const ProfileHeading = ({ className }: { className?: string }) => {
           Software Developer based in <br />
           Maharashtra, India.
         </p>
-        <div className="flex">
-          <LiveNow />
-        </div>
-        {/* <div className="flex gap-2 py-2">
+        <div className="flex gap-4 py-2">
           <span className="">
-            <DiscordIcon />
+            <GithubIcon />
           </span>
           <span className="">
             <TwitterIcon />
           </span>
           <span className="">
-            <GithubIcon />
+            <DiscordIcon />
           </span>
-        </div> */}
+        </div>
+        <div className="flex">
+          <LiveNow />
+        </div>
       </div>
     </div>
   );

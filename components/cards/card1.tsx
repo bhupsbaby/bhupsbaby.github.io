@@ -32,8 +32,10 @@ const SmallCard = (props: Props) => {
           />
         </div>
         <div className="">
-          <h3 className="text-xs md:text-lg font-normal">{props.data.title}</h3>
-          <p className="text-xs md:text-lg font-bold">{props.data.company}</p>
+          <h3 className="text-sm md:text-base font-normal">
+            {props.data.title}
+          </h3>
+          <p className="text-base md:text-lg font-bold">{props.data.company}</p>
         </div>
       </div>
       <p className="flex justify-center text-center text-xs md:text-sm text-gray-400 font-semibold">

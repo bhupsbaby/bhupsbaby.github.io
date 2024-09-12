@@ -1,3 +1,6 @@
+import DiscordIcon from "@/icons/discord";
+import GithubIcon from "@/icons/github";
+import TwitterIcon from "@/icons/twitter";
 import Image from "next/image";
 import React from "react";
 
@@ -16,24 +19,40 @@ const Footer = () => {
               height={80}
               className="rounded-full"
             />
-            <div className="flex flex-col justify-center gap-4">
-              <h2 className="text-xl md:text-3xl font-semibold">
-                I&apos;m Pranav Sonawane
-              </h2>
-              <p className="text-sm md:text-base text-gray-400">
-                Software Developer based in Maharashtra, India
-              </p>
+            <div className="flex flex-col justify-center gap-2">
+              <div className="flex flex-col gap-2 p-7">
+                <div className="flex flex-col">
+                  <h2 className="text-xl md:text-3xl font-semibold">
+                    I&apos;m Pranav Sonawane
+                  </h2>
+                  <p className="text-sm md:text-base text-gray-400">
+                    Software Developer based in Maharashtra, India
+                  </p>
+                </div>
+                <div className="flex gap-4 py-2">
+                  <span className="">
+                    <GithubIcon dark={true} />
+                  </span>
+                  <span className="">
+                    <TwitterIcon dark={true} />
+                  </span>
+                  <span className="">
+                    <DiscordIcon dark={true} />
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="hidden md:block md:flex justify-center gap-12 md:gap-20 px-8 w-full text-gray-400">
-            <div className="flex flex-col justify-center gap-8 text-sm md:text-xl">
-              <a href="#">Services</a>
-              <a href="#">About Me</a>
-            </div>
-            <div className="flex flex-col justify-center gap-8 text-sm md:text-xl">
-              <a href="#">Case Studies</a>
-              <a href="#">Contact Me</a>
-            </div>
+        </div>
+
+        <div className="hidden md:block md:flex justify-center gap-4 md:gap-12 px-4 text-gray-400">
+          <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
+            <a href="#">Services</a>
+            <a href="#">About Me</a>
+          </div>
+          <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
+            <a href="#">Case Studies</a>
+            <a href="#">Contact Me</a>
           </div>
         </div>
 
