@@ -1,18 +1,19 @@
 export const ExpericeData = [
   {
     id: 1,
-    title: "Full Stack Developer Intern",
+    title: "Full Stack Developer",
     company: "Greendreamearth.org",
     year: "Apr 2024 - Jun 2024",
     place: "Remote",
     desc: "Designed and developed web app using Next.js, MongoDB, Nest.js and with RBAC. Focused on improving user interface and experience along with security.",
-    image: "",
+    image: "/companyLogo/greendreamearthlogo.png",
     url: "https://www.helpstudyabroad.com",
   },
   {
     id: 2,
     title: "Front-end Developer",
     company: "The Time Stack",
+    desc: "Responsible for designing and developing the front-end of the web app using React.js, Recoil, and Tailwind CSS. Focused on improving user interface and experience.",
     place: "Remote",
     year: "Feb 2023 - Mar 2024",
     image: "",

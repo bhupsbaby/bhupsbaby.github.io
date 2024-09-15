@@ -25,8 +25,8 @@ const SmallCard = (props: Props) => {
         <div className="flex justify-center items-center relative w-12 h-12 rounded-full bg-offwhite p-2">
           <Image
             src={props.data.image}
-            height={16}
-            width={16}
+            height={28}
+            width={28}
             alt="company logo"
             className="absolute object-cover"
           />
