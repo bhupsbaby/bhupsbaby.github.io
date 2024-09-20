@@ -3,6 +3,8 @@ import React from "react";
 import Bubble from "../bubble";
 import { defaultImageSrc } from "@/data/data";
 import GithubIcon from "@/icons/github";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 type Props = {
   className?: string;
@@ -32,7 +34,14 @@ const CardWithImage = (props: Props) => {
         placeholder="blur"
       />
       <div className="flex flex-col gap-1 w-full">
-        <h3 className="text-lg font-semibold">{props.data.title}</h3>
+        <Link href={props.data.liveUrl || props.data.githubUrl} target="_blank">
+          <div className="flex">
+            <h3 className="text-lg font-semibold">{props.data.title}</h3>
+            {(props.data.liveUrl || props.data.githubUrl) && (
+              <ArrowUpRight className="w-4 h-4 text-gray-400 ml-1" />
+            )}
+          </div>
+        </Link>
         <div className="flex flex-wrap gap-2 w-full">
           {props.data.techStack.map((tech, index) => (
             <Bubble key={index} name={tech} />

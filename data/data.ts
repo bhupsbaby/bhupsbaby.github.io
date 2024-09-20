@@ -93,8 +93,8 @@ export const MyProjects = [
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, ligula at ultrices elementum, ipsum libero elementum ex, et ultrices turpis ante nec nis",
     image: "/mockups/logout-mockup-2.png",
     techStack: ["React Native", "Nest.js", "TypeScript"],
-    liveUrl: "lmawfe",
-    githubUrl: "lmawfe",
+    liveUrl: "https://github.com/snowrlax",
+    githubUrl: "",
   },
   {
     id: 3,
@@ -109,8 +109,8 @@ export const MyProjects = [
       "TypeScript",
     ],
     image: "",
-    liveUrl: "lmawfe",
-    githubUrl: "lmawfe",
+    liveUrl: "",
+    githubUrl: "",
   },
 ];
 
