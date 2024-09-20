@@ -1,4 +1,5 @@
 import { XProfileUrl } from "@/data/data";
+import Link from "next/link";
 import React from "react";
 
 const TwitterIcon = ({
@@ -11,9 +12,9 @@ const TwitterIcon = ({
   if (dark)
     return (
       <div>
-        <a href={XProfileUrl} target="_blank">
+        <Link href={XProfileUrl} target={"_blank"}>
           <svg
-            className={`h-6 w-6 ${className}`}
+            className={`h-6 w-6`}
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,14 +24,14 @@ const TwitterIcon = ({
               fill="white"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     );
   return (
     <div>
-      <a href={XProfileUrl} target="_blank">
+      <Link href={XProfileUrl} target={"_blank"}>
         <svg
-          className={`h-6 w-6 ${className}`}
+          className={`h-6 w-6`}
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +41,7 @@ const TwitterIcon = ({
             fill="black"
           />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };

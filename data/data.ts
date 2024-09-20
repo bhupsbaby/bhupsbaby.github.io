@@ -91,7 +91,7 @@ export const MyProjects = [
     id: 2,
     title: "Logout",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, ligula at ultrices elementum, ipsum libero elementum ex, et ultrices turpis ante nec nis",
-    image: "",
+    image: "/mockups/logout-mockup-2.png",
     techStack: ["React Native", "Nest.js", "TypeScript"],
     liveUrl: "lmawfe",
     githubUrl: "lmawfe",

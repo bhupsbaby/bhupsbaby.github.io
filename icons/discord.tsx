@@ -1,4 +1,5 @@
 import { DiscordUrl } from "@/data/data";
+import Link from "next/link";
 import React from "react";
 
 const DiscordIcon = ({
@@ -11,9 +12,9 @@ const DiscordIcon = ({
   if (dark)
     return (
       <div>
-        <a href={DiscordUrl} target="_blank">
+        <Link href={DiscordUrl} target={"_blank"}>
           <svg
-            className={`h-6 w-6 ${className}`}
+            className={`h-6 w-6`}
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,12 +24,12 @@ const DiscordIcon = ({
               fill="white"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     );
   return (
     <div className="">
-      <a href={DiscordUrl} target="_blank">
+      <Link href={DiscordUrl} target={"_blank"}>
         <svg
           className="h-6 w-6"
           viewBox="0 0 48 48"
@@ -47,7 +48,7 @@ const DiscordIcon = ({
             </clipPath>
           </defs>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };

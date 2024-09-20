@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Bubble from "../bubble";
+import { defaultImageSrc } from "@/data/data";
+import GithubIcon from "@/icons/github";
 
 type Props = {
   className?: string;
@@ -21,11 +23,13 @@ const CardWithImage = (props: Props) => {
       className={`flex flex-col items-center justify-between gap-3 rounded-2xl border border-lightbrown bg-white p-3 ${props.className}`}
     >
       <Image
-        src={props.data.image}
+        src={props.data.image || defaultImageSrc}
         alt={props.data.title}
         width={100}
         height={100}
         className="rounded-xl w-full bg-lightbrown object-cover"
+        blurDataURL={defaultImageSrc}
+        placeholder="blur"
       />
       <div className="flex flex-col gap-1 w-full">
         <h3 className="text-lg font-semibold">{props.data.title}</h3>

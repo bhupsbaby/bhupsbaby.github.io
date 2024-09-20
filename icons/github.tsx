@@ -1,4 +1,5 @@
 import { GithubProfileUrl } from "@/data/data";
+import Link from "next/link";
 import React from "react";
 
 const GithubIcon = ({
@@ -11,9 +12,9 @@ const GithubIcon = ({
   if (dark)
     return (
       <div className="">
-        <a href={GithubProfileUrl} target="_blank">
+        <Link href={GithubProfileUrl} target={"_blank"}>
           <svg
-            className={`h-6 w-6 ${className}`}
+            className={`h-6 w-6`}
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -32,14 +33,14 @@ const GithubIcon = ({
               </clipPath>
             </defs>
           </svg>
-        </a>
+        </Link>
       </div>
     );
   return (
     <div>
-      <a href={GithubProfileUrl} target="_blank">
+      <Link href={GithubProfileUrl} target={"_blank"}>
         <svg
-          className={`h-6 w-6 ${className}`}
+          className={`h-6 w-6`}
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +59,7 @@ const GithubIcon = ({
             </clipPath>
           </defs>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };
