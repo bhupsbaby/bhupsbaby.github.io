@@ -5,6 +5,8 @@ import DiscordIcon from "@/icons/discord";
 import TwitterIcon from "@/icons/twitter";
 import GithubIcon from "@/icons/github";
 import { FaDiscord, FaGithub, FaXTwitter } from "react-icons/fa6";
+import { DiscordUrl, GithubProfileUrl, XProfileUrl } from "@/data/data";
+import Link from "next/link";
 
 const ProfileHeading = ({ className }: { className?: string }) => {
   return (
@@ -27,15 +29,15 @@ const ProfileHeading = ({ className }: { className?: string }) => {
           Maharashtra, India.
         </p>
         <div className="flex gap-4 py-2">
-          <span className="">
+          <Link href={GithubProfileUrl} target={"_blank"}>
             <FaGithub className="w-6 h-6" />
-          </span>
-          <span className="">
+          </Link>
+          <Link href={XProfileUrl} target={"_blank"}>
             <FaXTwitter className="w-6 h-6" />
-          </span>
-          <span className="">
+          </Link>
+          <Link href={DiscordUrl} target={"_blank"}>
             <FaDiscord className="w-6 h-6 text-indigo-500" />
-          </span>
+          </Link>
         </div>
         <div className="flex">
           <LiveNow />
