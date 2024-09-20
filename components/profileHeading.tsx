@@ -4,6 +4,7 @@ import LiveNow from "./liveNow";
 import DiscordIcon from "@/icons/discord";
 import TwitterIcon from "@/icons/twitter";
 import GithubIcon from "@/icons/github";
+import { FaDiscord, FaGithub, FaXTwitter } from "react-icons/fa6";
 
 const ProfileHeading = ({ className }: { className?: string }) => {
   return (
@@ -27,13 +28,13 @@ const ProfileHeading = ({ className }: { className?: string }) => {
         </p>
         <div className="flex gap-4 py-2">
           <span className="">
-            <GithubIcon />
+            <FaGithub className="w-6 h-6" />
           </span>
           <span className="">
-            <TwitterIcon />
+            <FaXTwitter className="w-6 h-6" />
           </span>
           <span className="">
-            <DiscordIcon />
+            <FaDiscord className="w-6 h-6 text-indigo-500" />
           </span>
         </div>
         <div className="flex">
