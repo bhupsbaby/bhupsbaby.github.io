@@ -83,7 +83,7 @@ export const MyProjects = [
     title: "Help Study Abroad",
     desc: "As part of my internship at GreenDreamEarth.org, I developed HelpStudyAbroad.com, a platform aimed at helping students navigate and apply for study abroad programs. Built with Next.js for the front-end and Nest.js on the back-end, the project leverages TypeScript for cleaner and more reliable code. I also integrated Clerk for secure authentication and user management, ensuring a smooth login experience. The platform is designed to provide students with all the resources they need to simplify the study abroad application process.",
     techStack: ["Next.js", "Nest.js", "TypeScript", "Clerk"],
-    image: "/mockups/hsa-desktop-1.png",
+    image: "/mockups/hsa-mockup-1.png",
     liveUrl: "https://www.helpstudyabroad.com",
     githubUrl: "",
   },
