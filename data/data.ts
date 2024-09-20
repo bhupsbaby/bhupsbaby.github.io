@@ -16,7 +16,7 @@ export const ExpericeData = [
     desc: "Responsible for designing and developing the front-end of the web app using React.js, Recoil, and Tailwind CSS. Focused on improving user interface and experience.",
     place: "Remote",
     year: "Feb 2023 - Mar 2024",
-    image: "",
+    image: "/companyLogo/thetimestack.png",
     url: "https://thetimestack.com/",
   },
   // {
@@ -96,22 +96,22 @@ export const MyProjects = [
     liveUrl: "https://github.com/snowrlax",
     githubUrl: "",
   },
-  {
-    id: 3,
-    title: "Project Name",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, ligula at ultrices elementum, ipsum libero elementum ex, et ultrices turpis ante nec nis",
-    techStack: [
-      "React",
-      "Node.js",
-      "TypeScript",
-      "TypeScript",
-      "TypeScript",
-      "TypeScript",
-    ],
-    image: "",
-    liveUrl: "",
-    githubUrl: "",
-  },
+  // {
+  //   id: 3,
+  //   title: "Project Name",
+  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, ligula at ultrices elementum, ipsum libero elementum ex, et ultrices turpis ante nec nis",
+  //   techStack: [
+  //     "React",
+  //     "Node.js",
+  //     "TypeScript",
+  //     "TypeScript",
+  //     "TypeScript",
+  //     "TypeScript",
+  //   ],
+  //   image: "",
+  //   liveUrl: "",
+  //   githubUrl: "",
+  // },
 ];
 
 export const defaultImageSrc =
