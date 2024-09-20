@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import Bubble from "../bubble";
 import { defaultImageSrc } from "@/data/data";
-import GithubIcon from "@/icons/github";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
