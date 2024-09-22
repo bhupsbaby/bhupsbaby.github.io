@@ -96,22 +96,15 @@ export const MyProjects = [
     liveUrl: "https://github.com/snowrlax",
     githubUrl: "",
   },
-  // {
-  //   id: 3,
-  //   title: "Project Name",
-  //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, ligula at ultrices elementum, ipsum libero elementum ex, et ultrices turpis ante nec nis",
-  //   techStack: [
-  //     "React",
-  //     "Node.js",
-  //     "TypeScript",
-  //     "TypeScript",
-  //     "TypeScript",
-  //     "TypeScript",
-  //   ],
-  //   image: "",
-  //   liveUrl: "",
-  //   githubUrl: "",
-  // },
+  {
+    id: 3,
+    title: "Kanban Board",
+    desc: "Drag and drop kanban board to manage your tasks. Built with DnD-Kit, React, TypeScript, and Tailwind CSS.",
+    techStack: ["React", "DnD-Kit", "TypeScript", "Tailwind CSS"],
+    image: "/mockups/kanban-mockup.png",
+    liveUrl: "https://kanban-board-jet-omega.vercel.app/",
+    githubUrl: "https://github.com/snowrlax/kanban-board",
+  },
 ];
 
 export const defaultImageSrc =
