@@ -114,5 +114,5 @@ export const ResumeUrl =
   "https://drive.google.com/file/d/1-83Cu87iJTRW1L_DNLvxORpmSZU56oUK/view";
 
 export const GithubProfileUrl = "https://github.com/snowrlax";
-export const XProfileUrl = "https://twitter.com/pranaviskidding";
-export const DiscordUrl = "https://discord.com/snowrlax#6923";
+export const XProfileUrl = "https://x.com/pranviskidding";
+export const DiscordUrl = "https://discord.com/invite/ANTgehuw";
