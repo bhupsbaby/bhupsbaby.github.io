@@ -5,7 +5,12 @@ import DiscordIcon from "@/icons/discord";
 import TwitterIcon from "@/icons/twitter";
 import GithubIcon from "@/icons/github";
 import { FaDiscord, FaGithub, FaXTwitter } from "react-icons/fa6";
-import { DiscordUrl, GithubProfileUrl, XProfileUrl } from "@/data/data";
+import {
+  DiscordUrl,
+  GithubProfileUrl,
+  ProfileImage,
+  XProfileUrl,
+} from "@/data/data";
 import Link from "next/link";
 
 const ProfileHeading = ({ className }: { className?: string }) => {
@@ -13,6 +18,7 @@ const ProfileHeading = ({ className }: { className?: string }) => {
     <div className={`flex flex-col sticky top-12 ${className}`}>
       <Image
         src={
+          ProfileImage ||
           "https://i.pinimg.com/474x/69/56/f7/6956f7a4f805108af3f87c8bc5a600c1.jpg"
         }
         alt="Picture of the author"

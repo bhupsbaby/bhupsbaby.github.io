@@ -116,3 +116,5 @@ export const ResumeUrl =
 export const GithubProfileUrl = "https://github.com/snowrlax";
 export const XProfileUrl = "https://x.com/pranviskidding";
 export const DiscordUrl = "https://discord.com/invite/ANTgehuw";
+
+export const ProfileImage = "/images/profile.jpg";
