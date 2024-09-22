@@ -33,34 +33,34 @@ export const ExpericeData = [
 export const RecognitionData = [
   {
     id: 1,
-    title: "Best Employee of the Year",
-    company: "Company Name",
-    year: "Feb 2020",
-    place: "Pune, India",
+    title: "Finalist",
+    company: "Smart India Hackathon' 23",
+    year: "Dec 2023",
+    place: "Rajam, Andhra Pradesh",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, ligula at ultrices elementum, ipsum libero elementum ex, et ultrices turpis ante nec nis",
-    image: "",
+    image: "/companyLogo/sih-logo.png",
   },
-  {
-    id: 2,
-    title: "Best Employee of the Year",
-    company: "Company Name",
-    year: "Mar 2020",
-    place: "Pune, India",
-    image: "",
-  },
+  // {
+  //   id: 2,
+  //   title: "Best Employee of the Year",
+  //   company: "Company Name",
+  //   year: "Mar 2020",
+  //   place: "Pune, India",
+  //   image: "",
+  // },
 ];
 
 export const whatIDoData = [
   {
     id: 1,
-    title: "Full pages Web Design",
-    desc: "Crafting immersive digital experiences that tell a story and captivates audiences and deliver a seamless user experience.",
+    title: "Full-Stack Web Development",
+    desc: "Delivering robust, scalable web applications from front to back using modern technologies like React, Next.js, and Node.js.",
     icon: "",
   },
   {
     id: 2,
     title: "Mobile App Development",
-    desc: "Crafting immersive digital experiences that tell a story and captivates audiences and deliver a seamless user experience.",
+    desc: "Building sleek, intuitive mobile apps with a focus on performance and user experience.",
     icon: "",
   },
   {
@@ -71,8 +71,8 @@ export const whatIDoData = [
   },
   {
     id: 4,
-    title: "Web Development",
-    desc: "Crafting immersive digital experiences that tell a story and captivates audiences and deliver a seamless user experience.",
+    title: "End-to-End Solution Delivery",
+    desc: "From architecture to deployment, I ensure secure, efficient, and user-centric digital experiences.",
     icon: "",
   },
 ];
