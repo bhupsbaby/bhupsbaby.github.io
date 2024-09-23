@@ -35,7 +35,9 @@ const CardWithImage = (props: Props) => {
       <div className="flex flex-col gap-1 w-full">
         <Link href={props.data.liveUrl || props.data.githubUrl} target="_blank">
           <div className="flex">
-            <h3 className="text-lg font-semibold">{props.data.title}</h3>
+            <h3 className="text-lg font-semibold hover:underline underline-offset-2 decoration-gray-400">
+              {props.data.title}
+            </h3>
             {(props.data.liveUrl || props.data.githubUrl) && (
               <ArrowUpRight className="w-4 h-4 text-gray-400 ml-1" />
             )}
