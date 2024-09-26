@@ -81,7 +81,7 @@ export const MyProjects = [
   {
     id: 1,
     title: "Help Study Abroad",
-    desc: "As part of my internship at GreenDreamEarth.org, I developed HelpStudyAbroad.com, a platform aimed at helping students navigate and apply for study abroad programs. Built with Next.js for the front-end and Nest.js on the back-end, the project leverages TypeScript for cleaner and more reliable code. I also integrated Clerk for secure authentication and user management, ensuring a smooth login experience. The platform is designed to provide students with all the resources they need to simplify the study abroad application process.",
+    desc: "Helpstudyabroad aims at helping students navigate and apply for study abroad programs. Built with Next.js for the front-end and Nest.js on the back-end, the project leverages TypeScript for cleaner and more reliable code. I also integrated Clerk for secure authentication and user management, ensuring a smooth login experience. The platform is designed to provide students with all the resources they need to simplify the study abroad application process.",
     techStack: ["Next.js", "Nest.js", "TypeScript", "Clerk"],
     image: "/mockups/hsa-mockup-1.png",
     liveUrl: "https://www.helpstudyabroad.com",
@@ -90,7 +90,7 @@ export const MyProjects = [
   {
     id: 2,
     title: "Logout",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, ligula at ultrices elementum, ipsum libero elementum ex, et ultrices turpis ante nec nis",
+    desc: "A social meetup platform where users connect with others in their community and find events that match their interests. Developed using Nest.js and Mongoose, with a MongoDb database to store user and event data. The platform is designed to help users connect with others in their community and find events that match their interests.",
     image: "/mockups/logout-mockup-2.png",
     techStack: ["React Native", "Nest.js", "TypeScript"],
     liveUrl: "",
