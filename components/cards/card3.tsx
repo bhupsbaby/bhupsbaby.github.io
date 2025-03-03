@@ -36,6 +36,7 @@ const CardWithImage: React.FC<Props> = (props: Props) => {
         className="rounded-xl w-full bg-lightbrown object-cover"
         blurDataURL={defaultImageSrc}
         placeholder="blur"
+        unoptimized
       />
       <div className="flex flex-col gap-1 w-full">
         <Link href={props.data.liveUrl || props.data.githubUrl} target="_blank">

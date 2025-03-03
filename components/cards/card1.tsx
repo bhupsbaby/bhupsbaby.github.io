@@ -29,6 +29,7 @@ const SmallCard = (props: Props) => {
             width={28}
             alt="company logo"
             className="absolute object-cover"
+            unoptimized
           />
         </div>
         <div className="">

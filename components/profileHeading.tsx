@@ -25,6 +25,7 @@ const ProfileHeading = ({ className }: { className?: string }) => {
         width={200}
         height={200}
         className="rounded-full object-cover h-40 w-40 md:h-64 md:w-60"
+        unoptimized
       />
       <div className="flex flex-col justify-center pt-7 gap-2">
         <h1 id={"main-heading"} className="text-4xl md:text-5xl text-semibold">
