@@ -1,11 +1,18 @@
+"use client"
+
 import { ProfileImage } from "@/data/data";
 import DiscordIcon from "@/icons/discord";
 import GithubIcon from "@/icons/github";
 import TwitterIcon from "@/icons/twitter";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import Link from "next/link";
+import EmojiContactForm from "../shared/EmojiContactForm";
+import { AnimatePresence } from "framer-motion";
 
 const Footer = () => {
+  const [showContactForm, setShowContactForm] = useState(false);
+
   return (
     <section className="bg-offwhite md:p-12">
       <div className="flex flex-col md:flex-row justify-between md:p-12 rounded-3xl rounded-bl-none rounded-br-none md:rounded-full bg-black text-white">
@@ -50,21 +57,30 @@ const Footer = () => {
 
         <div className="hidden md:block md:flex justify-center gap-4 md:gap-12 px-4 text-gray-400">
           <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
-            <a href="#">Services</a>
-            <a href="#">About Me</a>
+            <Link href="/services">Services</Link>
+            <Link href="/about">About Me</Link>
           </div>
           <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
-            <a href="#">Case Studies</a>
-            <a href="#">Contact Me</a>
+            <Link href="/blog">Blog</Link>
+            <Link href="/contact">Contact Me</Link>
           </div>
         </div>
 
         <div className="flex justify-center items-center relative py-12 md:py-0 md:mb-0 px-20">
-          <button className="absolute flex text-center justify-center rounded-full w-[90%] bg-white py-4 px-6 text-sm md:text-md text-black font-semibold">
+          <button 
+            className="absolute flex text-center justify-center rounded-full w-[90%] bg-white py-4 px-6 text-sm md:text-md text-black font-semibold hover:bg-gray-100 transition-colors"
+            onClick={() => setShowContactForm(true)}
+          >
             Let&apos;s talk
           </button>
         </div>
       </div>
+
+      <AnimatePresence>
+        {showContactForm && (
+          <EmojiContactForm onClose={() => setShowContactForm(false)} />
+        )}
+      </AnimatePresence>
     </section>
   );
 };

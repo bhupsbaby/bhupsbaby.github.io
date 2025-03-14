@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import Bubble from "../bubble";
+import Bubble from "../shared/bubble";
 import { defaultImageSrc } from "@/data/data";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion"

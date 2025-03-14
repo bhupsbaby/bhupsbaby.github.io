@@ -79,10 +79,73 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+            color: '#374151',
+            a: {
+              color: '#3182ce',
+              '&:hover': {
+                color: '#2c5282',
+              },
+            },
+            h1: {
+              color: '#111827',
+              fontWeight: '700',
+            },
+            h2: {
+              color: '#111827',
+              fontWeight: '600',
+            },
+            h3: {
+              color: '#111827',
+              fontWeight: '600',
+            },
+            strong: {
+              color: '#111827',
+            },
+            code: {
+              color: '#e2e8f0',
+              backgroundColor: '#1e293b',
+              padding: '0.2em 0.4em',
+              borderRadius: '0.25rem',
+            },
+            'pre code': {
+              backgroundColor: 'transparent',
+              padding: '0',
+              color: '#e2e8f0',
+            },
+            pre: {
+              backgroundColor: '#1e293b',
+              color: '#e2e8f0',
+              padding: '1rem',
+              borderRadius: '0.5rem',
+              overflowX: 'auto',
+            },
+            blockquote: {
+              borderLeftColor: '#e5e7eb',
+              color: '#6b7280',
+            },
+            ul: {
+              listStyleType: 'disc',
+              paddingLeft: '1.5rem',
+            },
+            ol: {
+              listStyleType: 'decimal',
+              paddingLeft: '1.5rem',
+            },
+            li: {
+              marginTop: '0.5rem',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {

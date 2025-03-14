@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import LiveNow from "./liveNow";
+import LiveNow from "../shared/liveNow";
 import DiscordIcon from "@/icons/discord";
 import TwitterIcon from "@/icons/twitter";
 import GithubIcon from "@/icons/github";

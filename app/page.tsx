@@ -2,12 +2,12 @@
 
 import { useRef } from "react"
 import { motion, useScroll, useInView, useSpring } from "framer-motion"
-import About from "@/components/about"
+import About from "@/components/home/about"
 import SmallCard from "@/components/cards/card1"
 import MediumCard from "@/components/cards/card2"
 import CardWithImage from "@/components/cards/card3"
-import Section from "@/components/customSection"
-import ProfileHeading from "@/components/profileHeading"
+import Section from "@/components/shared/customSection"
+import ProfileHeading from "@/components/home/profileHeading"
 import { ExpericeData, MyProjects, RecognitionData, whatIDoData } from "@/data/data"
 
 export default function Home() {
