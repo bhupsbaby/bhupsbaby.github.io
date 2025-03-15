@@ -1,14 +1,19 @@
 "use client"
 
-import { useRef } from "react"
+import { useRef, Suspense, lazy } from "react"
 import { motion, useScroll, useInView, useSpring } from "framer-motion"
 import About from "@/components/home/about"
+// Import only the components needed for initial render
 import SmallCard from "@/components/cards/card1"
-import MediumCard from "@/components/cards/card2"
-import CardWithImage from "@/components/cards/card3"
+// Dynamically import components that aren't needed immediately
+const MediumCard = lazy(() => import("@/components/cards/card2"))
+const CardWithImage = lazy(() => import("@/components/cards/card3"))
 import Section from "@/components/shared/customSection"
 import ProfileHeading from "@/components/home/profileHeading"
 import { ExpericeData, MyProjects, RecognitionData, whatIDoData } from "@/data/data"
+
+// Simple loading fallback component
+const LoadingFallback = () => <div className="w-full h-20 bg-gray-100 animate-pulse rounded-lg"></div>
 
 export default function Home() {
   // Refs for scroll animations
@@ -126,7 +131,7 @@ export default function Home() {
               type: "spring",
               stiffness: 100,
               damping: 20,
-              delay: 0.4,
+              delay: 0.1,
             }}
           >
             <About />
@@ -211,24 +216,26 @@ export default function Home() {
                 What I Do
               </motion.h2>
 
-              <motion.div variants={cardContainerVariants} className="space-y-4">
-                {whatIDoData.map((data, index) => (
-                  <motion.div
-                    key={data.id}
-                    variants={cardVariants}
-                    className="rounded-3xl"
-                    whileHover={{
-                      y: -5,
-                      boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.05)",
-                      scale: 1.01,
-                      transition: { duration: 0.2 },
-                    }}
-                    custom={index}
-                  >
-                    <MediumCard data={data} />
-                  </motion.div>
-                ))}
-              </motion.div>
+              <Suspense fallback={<LoadingFallback />}>
+                <motion.div variants={cardContainerVariants} className="space-y-4">
+                  {whatIDoData.map((data, index) => (
+                    <motion.div
+                      key={data.id}
+                      variants={cardVariants}
+                      className="rounded-3xl"
+                      whileHover={{
+                        y: -5,
+                        boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.05)",
+                        scale: 1.01,
+                        transition: { duration: 0.2 },
+                      }}
+                      custom={index}
+                    >
+                      <MediumCard data={data} />
+                    </motion.div>
+                  ))}
+                </motion.div>
+              </Suspense>
             </Section>
           </motion.div>
 
@@ -245,24 +252,26 @@ export default function Home() {
                 Projects
               </motion.h2>
 
-              <motion.div variants={cardContainerVariants} className="space-y-6">
-                {MyProjects.map((data, index) => (
-                  <motion.div
-                    key={data.id}
-                    variants={cardVariants}
-                    className="rounded-3xl"
-                    whileHover={{
-                      y: -8,
-                      boxShadow: "0px 15px 30px rgba(0, 0, 0, 0.1)",
-                      scale: 1.02,
-                      transition: { duration: 0.3 },
-                    }}
-                    custom={index}
-                  >
-                    <CardWithImage data={data} />
-                  </motion.div>
-                ))}
-              </motion.div>
+              <Suspense fallback={<LoadingFallback />}>
+                <motion.div variants={cardContainerVariants} className="space-y-6">
+                  {MyProjects.map((data, index) => (
+                    <motion.div
+                      key={data.id}
+                      variants={cardVariants}
+                      className="rounded-3xl"
+                      whileHover={{
+                        y: -8,
+                        boxShadow: "0px 15px 30px rgba(0, 0, 0, 0.1)",
+                        scale: 1.02,
+                        transition: { duration: 0.3 },
+                      }}
+                      custom={index}
+                    >
+                      <CardWithImage data={data} />
+                    </motion.div>
+                  ))}
+                </motion.div>
+              </Suspense>
             </Section>
           </motion.div>
         </div>
