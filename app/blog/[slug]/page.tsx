@@ -16,6 +16,23 @@ interface BlogPost {
   content: string;
 }
 
+// Get all blog posts for static generation
+export async function generateStaticParams() {
+  const blogDir = path.join(process.cwd(), 'content/blog');
+  
+  if (!fs.existsSync(blogDir)) {
+    return [];
+  }
+  
+  const files = fs.readdirSync(blogDir);
+  
+  return files
+    .filter(file => file.endsWith('.mdx'))
+    .map(file => ({
+      slug: file.replace(/\.mdx$/, ''),
+    }));
+}
+
 // Get blog post by slug
 async function getBlogPost(slug: string): Promise<BlogPost | null> {
   try {
