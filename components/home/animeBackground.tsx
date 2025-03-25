@@ -123,12 +123,12 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
   return (
     <div className={`relative w-full ${className} hidden md:block`}>
       {/* Content */}
-      <div className="relative z-10 pt-24">
+      <div className="relative pt-24">
         {children}
       </div>
 
       {/* Anime Elements */}
-      <div className="absolute inset-0 pointer-events-none z-20">
+      <div className="absolute inset-0 pointer-events-none z-10">
         {/* Spirited Away Tattoo */}
         <motion.div
           ref={spiritedRef}
