@@ -11,6 +11,8 @@ const CardWithImage = lazy(() => import("@/components/cards/card3"))
 import Section from "@/components/shared/customSection"
 import ProfileHeading from "@/components/home/profileHeading"
 import { ExpericeData, MyProjects, RecognitionData, whatIDoData } from "@/data/data"
+import AnimeBackground from "@/components/home/animeBackground"
+import Footer from "@/components/layout/footer"
 
 // Simple loading fallback component
 const LoadingFallback = () => <div className="w-full h-20 bg-gray-100 animate-pulse rounded-lg"></div>
@@ -100,7 +102,7 @@ export default function Home() {
 
   return (
     <motion.main
-      className="flex flex-col items-center py-7 md:py-20 min-h-screen bg-offwhite"
+      className="flex flex-col items-center md:py-20 min-h-screen bg-offwhite/95 relative z-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -276,6 +278,17 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
+
+      {/* Anime Background Section */}
+      <AnimeBackground>
+
+      {/* Footer */}
+      <Footer />
+
+      </AnimeBackground>
+
+      <Footer className="block md:hidden" />
+
     </motion.main>
   )
 }

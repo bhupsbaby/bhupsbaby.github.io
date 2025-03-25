@@ -10,11 +10,11 @@ import Link from "next/link";
 import EmojiContactForm from "../shared/EmojiContactForm";
 import { AnimatePresence } from "framer-motion";
 
-const Footer = () => {
+const Footer = ({className}: {className?: string}) => {
   const [showContactForm, setShowContactForm] = useState(false);
 
   return (
-    <section className="bg-offwhite md:p-12">
+    <section className={`bg-offwhite md:p-12 ${className}`}>
       <div className="flex flex-col md:flex-row justify-between md:p-12 rounded-3xl rounded-bl-none rounded-br-none md:rounded-full bg-black text-white">
         <div className="flex flex-col p-7 md:flex-row items-center">
           <div className="flex md:flex-row items-center gap-7 md:gap-12">

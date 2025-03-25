@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "**",
       },
     ],
+    unoptimized: true, // Disable image optimization for static export
   },
   output: "export", // <=== enables static exports
   reactStrictMode: true,
