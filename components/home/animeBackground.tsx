@@ -78,7 +78,7 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
   }, [])
 
   // Transform values for each element
-  const spiritedX = useTransform(mouseX, [0, window.innerWidth], [-10, 10])
+  const spiritedX = useTransform(mouseX, [0, window.innerWidth], [-20, 20])
   const spiritedY = useTransform(mouseY, [0, window.innerHeight], [-10, 10])
 
   const trainX = useTransform(mouseX, [0, window.innerWidth], [-10, 10])
@@ -90,19 +90,19 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
   const animeX = useTransform(mouseX, [0, window.innerWidth], [-10, 10])
   const animeY = useTransform(mouseY, [0, window.innerHeight], [-10, 10])
 
-  const ratAndBirdX = useTransform(mouseX, [0, window.innerWidth], [-10, 10])
+  const ratAndBirdX = useTransform(mouseX, [0, window.innerWidth], [-20, 20])
   const ratAndBirdY = useTransform(mouseY, [0, window.innerHeight], [-10, 10])
 
   const ponyoX = useTransform(mouseX, [0, window.innerWidth], [-10, 10])
   const ponyoY = useTransform(mouseY, [0, window.innerHeight], [-10, 10])
 
-  const itsumiX = useTransform(mouseX, [0, window.innerWidth], [-10, 10])
+  const itsumiX = useTransform(mouseX, [0, window.innerWidth], [-20, 20])
   const itsumiY = useTransform(mouseY, [0, window.innerHeight], [-10, 10])
 
-  const punpunX = useTransform(mouseX, [0, window.innerWidth], [-10, 10])
+  const punpunX = useTransform(mouseX, [0, window.innerWidth], [-20, 20])
   const punpunY = useTransform(mouseY, [0, window.innerHeight], [-10, 10])
 
-  const momoX = useTransform(mouseX, [0, window.innerWidth], [-10, 10])
+  const momoX = useTransform(mouseX, [0, window.innerWidth], [-20, 20])
   const momoY = useTransform(mouseY, [0, window.innerHeight], [-10, 10])
 
   // Combined variants for fade in and hover
@@ -139,7 +139,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: spiritedX, 
-            y: useTransform([spiritedY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([spiritedY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
@@ -161,7 +162,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: trainX, 
-            y: useTransform([trainY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([trainY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
@@ -182,7 +184,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: grannyX, 
-            y: useTransform([grannyY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([grannyY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
@@ -203,7 +206,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: ratAndBirdX, 
-            y: useTransform([ratAndBirdY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([ratAndBirdY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
@@ -224,7 +228,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: animeX, 
-            y: useTransform([animeY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([animeY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
@@ -245,7 +250,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: ponyoX, 
-            y: useTransform([ponyoY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([ponyoY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
@@ -266,7 +272,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: itsumiX, 
-            y: useTransform([itsumiY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([itsumiY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
@@ -287,7 +294,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: punpunX, 
-            y: useTransform([punpunY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([punpunY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
@@ -308,7 +316,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           whileHover="hover"
           style={{ 
             x: momoX, 
-            y: useTransform([momoY, floatingY], (values: number[]) => values[0] + values[1])
+            // y: useTransform([momoY, floatingY], (values: number[]) => values[0] + values[1])
+            y: floatingY
           }}
         >
           <Image
