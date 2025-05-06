@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Navbar({ className }: { className?: string }) {
   return (
     <header
-      className={`flex h-20 shrink-0 items-center px-7 md:px-48 bg-offwhite ${className}`}
+      className={`absolute flex h-20 shrink-0 items-center px-7 md:px-48 bg-offwhite ${className}`}
     >
       <nav className="flex justify-between items-center w-full gap-4 sm:gap-6">
         <div className="flex justify-center items-center">
@@ -16,17 +16,17 @@ export default function Navbar({ className }: { className?: string }) {
           </Link>
           <div className="hidden md:block">
             <a
-              href="#"
+              href="/blog"
               className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-md text-center text-gray-600 font-semibold "
             >
-              Services
+              Blogs
             </a>
-            <a
+            {/* <a
               href="#"
               className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-md text-center text-gray-600 font-semibold "
             >
               About
-            </a>
+            </a> */}
           </div>
         </div>
 

@@ -102,7 +102,7 @@ export default function Home() {
 
   return (
     <motion.main
-      className="flex flex-col items-center md:py-20 min-h-screen bg-offwhite/95 relative z-10"
+      className="flex flex-col items-center min-h-screen bg-offwhite/95 relative z-10 selection:bg-lightbrown selection:text-gray-800"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -125,8 +125,8 @@ export default function Home() {
           <ProfileHeading />
         </motion.div>
 
-        <div className="flex flex-col items-center w-full md:w-[50%]">
-          <motion.div
+        <div className="flex flex-col items-center w-full md:w-[50%] md:pt-24">
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -137,7 +137,7 @@ export default function Home() {
             }}
           >
             <About />
-          </motion.div>
+          </motion.div> */}
 
           {/* Working Experience */}
           <motion.div
@@ -147,9 +147,9 @@ export default function Home() {
             animate={experienceInView ? "visible" : "hidden"}
             className="w-full"
           >
-            <Section>
+            <Section linebreak={false}>
               <motion.h2 className="text-2xl font-semibold pb-4" variants={itemVariants}>
-                Working Experience
+                Work Experience
               </motion.h2>
 
               <motion.div variants={cardContainerVariants} className="space-y-4">
@@ -206,7 +206,7 @@ export default function Home() {
           </motion.div>
 
           {/* What i do */}
-          <motion.div
+          {/* <motion.div
             ref={whatIDoRef}
             variants={sectionVariants}
             initial="hidden"
@@ -239,7 +239,7 @@ export default function Home() {
                 </motion.div>
               </Suspense>
             </Section>
-          </motion.div>
+          </motion.div> */}
 
           {/* Projects */}
           <motion.div

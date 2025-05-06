@@ -121,12 +121,12 @@ const Loading = () => {
                   I&apos;m <br /> Pranav Sonawane
                 </motion.h1>
                 <motion.p
-                  className="text-base md:text-2xl font-semibold text-black"
+                  className="text-base md:text-xl italic text-gray-600"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.8 }}
                 >
-                  Software Developer based in <br />
+                  <span className="bg-lightbrown text-black">Software Developer</span> based in <br />
                   Maharashtra, India.
                 </motion.p>
                 <motion.div
@@ -202,7 +202,7 @@ const Loading = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1, duration: 0.8 }}
           >
-            Working Experience
+            Work Experience
           </motion.h2>
 
           <motion.div

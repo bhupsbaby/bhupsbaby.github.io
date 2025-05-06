@@ -35,8 +35,8 @@ const Footer = ({className}: {className?: string}) => {
                   <h2 className="text-xl md:text-3xl font-semibold">
                     I&apos;m Pranav Sonawane
                   </h2>
-                  <p className="text-sm md:text-base text-gray-400">
-                    Software Developer based in Maharashtra, India
+                  <p className="text-sm md:text-base italic text-gray-300">
+                  <span className="bg-lightbrown text-black">Software Developer</span> based in <br />Maharashtra, India
                   </p>
                 </div>
                 <div className="flex gap-4 py-2">
@@ -55,15 +55,15 @@ const Footer = ({className}: {className?: string}) => {
           </div>
         </div>
 
-        <div className="hidden md:block md:flex justify-center gap-4 md:gap-12 px-4 text-gray-400">
-          <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
+        <div className="hidden md:flex justify-center gap-4 md:gap-12 px-4 text-gray-400">
+          {/* <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
             <Link href="/services">Services</Link>
             <Link href="/about">About Me</Link>
-          </div>
-          <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
+          </div> */}
+          {/* <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
             <Link href="/blog">Blog</Link>
             <Link href="/contact">Contact Me</Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex justify-center items-center relative py-12 md:py-0 md:mb-0 px-20">

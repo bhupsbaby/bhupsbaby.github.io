@@ -51,7 +51,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <GoogleAnalytics gaId="G-852PT30F8Y" />
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         {/* <Footer /> */}
         <DeferredScripts />

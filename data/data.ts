@@ -1,7 +1,7 @@
 export const ExpericeData = [
   {
     id: 1,
-    title: "Full Stack Developer",
+    title: "Full Stack Intern",
     company: "Greendreamearth.org",
     year: "Apr 2024 - Jun 2024",
     place: "Remote",
@@ -11,12 +11,12 @@ export const ExpericeData = [
   },
   {
     id: 2,
-    title: "Front-end Developer",
-    company: "The Time Stack",
+    title: "SDE-1",
+    company: "Pyrack",
     desc: "Responsible for designing and developing the front-end of the web app using React.js, Recoil, and Tailwind CSS. Focused on improving user interface and experience.",
     place: "Remote",
-    year: "Feb 2023 - Mar 2024",
-    image: "/companyLogo/thetimestack.png",
+    year: "Oct 2024 - Ongoing",
+    image: "/companyLogo/pyrack-logo.jpeg",
     url: "https://thetimestack.com/",
   },
   // {
@@ -80,6 +80,15 @@ export const whatIDoData = [
 export const MyProjects = [
   {
     id: 1,
+    title: "Mixtape",
+    desc: "A Vintage Playlist maker for you and your loved ones!",
+    techStack: ["Next.js", "TypeScript", "Tailwind"],
+    image: "/mockups/hsa-mockup-1.png",
+    liveUrl: "https://mixtape-pied.vercel.app",
+    githubUrl: "",
+  },
+  {
+    id: 2,
     title: "Help Study Abroad",
     desc: "Helpstudyabroad aims at helping students navigate and apply for study abroad programs. Built with Next.js for the front-end and Nest.js on the back-end, the project leverages TypeScript for cleaner and more reliable code. I also integrated Clerk for secure authentication and user management, ensuring a smooth login experience. The platform is designed to provide students with all the resources they need to simplify the study abroad application process.",
     techStack: ["Next.js", "Nest.js", "TypeScript", "Clerk"],
@@ -88,7 +97,7 @@ export const MyProjects = [
     githubUrl: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Logout",
     desc: "A social meetup platform where users connect with others in their community and find events that match their interests. Developed using Nest.js and Mongoose, with a MongoDb database to store user and event data. The platform is designed to help users connect with others in their community and find events that match their interests.",
     image: "/mockups/logout-mockup-2.png",
@@ -97,7 +106,7 @@ export const MyProjects = [
     githubUrl: "https://github.com/snowrlax/logout-backend",
   },
   {
-    id: 3,
+    id: 4,
     title: "Kanban Board",
     desc: "Drag and drop kanban board to manage your tasks. Built with DnD-Kit, React, TypeScript, and Tailwind CSS.",
     techStack: ["React", "DnD-Kit", "TypeScript", "Tailwind CSS"],
