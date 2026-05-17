@@ -33,10 +33,10 @@ const Footer = ({ className }: { className?: string }) => {
               <div className="flex flex-col gap-2 p-7">
                 <div className="flex flex-col">
                   <h2 className="text-xl md:text-3xl font-semibold">
-                    I&apos;m Pranav Sonawane
+                    Pranav Sonawane
                   </h2>
                   <p className="text-sm md:text-base italic text-gray-300">
-                    <span className="bg-lightbrown text-black">Software Developer</span> based in <br />Pune, India
+                    <span className="bg-lightbrown text-black">Software Engineer</span>
                   </p>
                 </div>
                 <div className="flex gap-4 py-2">
